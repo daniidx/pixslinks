@@ -14,8 +14,8 @@ const init = async () => {
   let uiDiv = document.getElementById('forgeConfig')
   console.log("ovovoov", uiDiv)
   uiDiv.style.position = 'fixed';
-  uiDiv.style.top = 0;
-  uiDiv.style.left = 0;
+  uiDiv.style.top = 30;
+  uiDiv.style.left = 30;
   uiDiv.style.zIndex = 1000; 
   document.body.appendChild(uiDiv);
 
