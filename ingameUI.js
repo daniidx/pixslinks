@@ -14,8 +14,8 @@ const init = async () => {
   let uiDiv = document.getElementById('forgeConfig')
   console.log("ovovoov", uiDiv)
   uiDiv.style.position = 'fixed';
-  uiDiv.style.top = 20;
-  uiDiv.style.left = 20;
+  uiDiv.style.top = 0;
+  uiDiv.style.left = 0;
   uiDiv.style.zIndex = 1000; 
   document.body.appendChild(uiDiv);
 
@@ -61,37 +61,27 @@ const ShowUI = async () => {
   let div = document.createElement('div');
 
   div.innerHTML = /*html*/`
-    <div id="forgeConfig" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; padding: 16px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
-      <h1 style="color: #fff; font-size: 24px; margin-bottom: 16px;">Configuration</h1>
+    <div id="forgeConfig" style="background: rgba(255, 255, 255, 0.9); border-radius: 8px; padding: 16px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <h1 style="color: #333; font-size: 24px; margin-bottom: 16px;">Configuration</h1>
 
       <div style="margin-bottom: 16px;">
-        <input type="checkbox" id="longRange" style="display: none;">
-        <label for="longRange" style="color: #fff; font-size: 16px; cursor: pointer; user-select: none; padding: 8px; border-radius: 4px; background: rgba(255, 255, 255, 0.2);">
-          <span style="display: inline-block; width: 16px; height: 16px; border: 2px solid #fff; border-radius: 2px; margin-right: 8px;"></span>Long range click
-        </label><br>
+        <input type="checkbox" id="longRange" style="margin-right: 8px;">
+        <label for="longRange" style="color: #333; font-size: 16px;">Long range click</label><br>
         
-        <input type="checkbox" id="easyTeleport" style="display: none;">
-        <label for="easyTeleport" style="color: #fff; font-size: 16px; cursor: pointer; user-select: none; padding: 8px; border-radius: 4px; background: rgba(255, 255, 255, 0.2);">
-          <span style="display: inline-block; width: 16px; height: 16px; border: 2px solid #fff; border-radius: 50%; margin-right: 8px;"></span>Easy teleport
-        </label><br>
+        <input type="checkbox" id="easyTeleport" style="margin-right: 8px;">
+        <label for="easyTeleport" style="color: #333; font-size: 16px;">Easy teleport</label><br>
         
         <br>
-        <p style="font-size: 14px; color: #fff; opacity: 0.8;">Enable the following options before starting the game:</p>
-        <input type="checkbox" id="noCollision" style="display: none;">
-        <label for="noCollision" style="color: #fff; font-size: 16px; cursor: pointer; user-select: none; padding: 8px; border-radius: 4px; background: rgba(255, 255, 255, 0.2);">
-          <span style="display: inline-block; width: 16px; height: 16px; border: 2px solid #fff; border-radius: 50%; margin-right: 8px;"></span>No collisions <span style="font-size: 12px; color: rgba(255, 255, 255, 0.6);">(game reload required)</span>
-        </label><br>
+        <p style="font-size: 14px; color: #666;">Enable the following options before starting the game:</p>
+        <input type="checkbox" id="noCollision" style="margin-right: 8px;">
+        <label for="noCollision" style="color: #333; font-size: 16px;">No collisions <span style="font-size: 12px; color: #999;">(game reload required)</span></label><br>
         
-        <input type="checkbox" id="speedHack" style="display: none;">
-        <label for="speedHack" style="color: #fff; font-size: 16px; cursor: pointer; user-select: none; padding: 8px; border-radius: 4px; background: rgba(255, 255, 255, 0.2);">
-          <span style="display: inline-block; width: 16px; height: 16px; border: 2px solid #fff; border-radius: 2px; margin-right: 8px;"></span>Speed Hack <span style="font-size: 12px; color: rgba(255, 255, 255, 0.6);">(game reload required)</span>
-        </label><br>
+        <input type="checkbox" id="speedHack" style="margin-right: 8px;">
+        <label for="speedHack" style="color: #333; font-size: 16px;">Speed Hack <span style="font-size: 12px; color: #999;">(game reload required)</span></label><br>
 
         <div>
-          <input type="checkbox" id="autoChopTrees" disabled style="display: none;">
-          <label for="autoChopTrees" style="color: rgba(255, 255, 255, 0.6); font-size: 16px; cursor: pointer; user-select: none; padding: 8px; border-radius: 4px; background: rgba(255, 255, 255, 0.2);">
-            <span style="display: inline-block; width: 16px; height: 16px; border: 2px solid #fff; border-radius: 2px; margin-right: 8px;"></span>Auto chop trees <span style="font-size: 12px; color: rgba(255, 255, 255, 0.6);">(coming soon)</span>
-          </label><br>
+          <input type="checkbox" id="autoChopTrees" disabled style="margin-right: 8px;">
+          <label for="autoChopTrees" style="color: #999; font-size: 16px;">Auto chop trees <span style="font-size: 12px; color: #999;">(coming soon)</span></label><br>
         </div>
         
       </div>
@@ -102,6 +92,5 @@ const ShowUI = async () => {
     return div;
 
 }
-
 
 init()
