@@ -74,7 +74,7 @@ const ShowUI = async () => {
         <br>
         <p style="font-size: 14px; color: #666;">Enable the following options before starting the game:</p>
         <input type="checkbox" id="noCollision" style="margin-right: 8px;">
-        <label for="noCollision" style="color: #333; font-size: 16px;">No collisions <span style="font-size: 12px; color: #999;">(game reload required)</span></label><br>
+        <label for="noCollision" style="color: #333; font-size: 16px;">No collisions <span style="font-size: 12px; color: #999;">(try game reload required)</span></label><br>
         
         <input type="checkbox" id="speedHack" style="margin-right: 8px;">
         <label for="speedHack" style="color: #333; font-size: 16px;">Speed Hack <span style="font-size: 12px; color: #999;">(game reload required)</span></label><br>
