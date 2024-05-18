@@ -79,10 +79,6 @@ const ShowUI = async () => {
         <input type="checkbox" id="speedHack" style="margin-right: 8px;">
         <label for="speedHack" style="color: #333; font-size: 16px;">Speed Hack <span style="font-size: 12px; color: #999;">(game reload required)</span></label><br>
 
-        <div>
-          <input type="checkbox" id="autoChopTrees" disabled style="margin-right: 8px;">
-          <label for="autoChopTrees" style="color: #999; font-size: 16px;">Auto chop trees <span style="font-size: 12px; color: #999;">(coming soon)</span></label><br>
-        </div>
         
       </div>
         
